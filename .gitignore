@@ -1,0 +1,21 @@
+*~
+.DS_Store
+
+node_modules
+bower_components
+vendor
+
+# .env
+.env.local
+.env.development
+.env.test
+.env.development.local
+.env.test.local
+.env.production.local
+
+build
+
+# dev
+_db-dev
+src/php/symlink.md
+_private
