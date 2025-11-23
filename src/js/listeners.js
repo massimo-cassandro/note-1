@@ -1,6 +1,5 @@
 import { params } from './params';
-import { getData } from './get-data';
-import { reset_search } from './get-data';
+import { getData, reset_search } from './get-data';
 
 export function setListeners() {
 
