@@ -58,7 +58,7 @@ function create_row(item) {
 
   // tags.map(t => `<span role="button" data-tag-id="${t.id}">${t.tag}</span>`).join('')
   item.tags = JSON.parse(item.tags ?? '[]').map(t => `<span class="badge">${t.tag}</span>`).join('');
-  item.content = DOMPurify.sanitize(marked.parse(item.content));
+  item.content = DOMPurify.sanitize(marked.parse(item.content?? ''));
 
   item.updated = new Date(item.updated).toLocaleString('it-IT', {
     year: '2-digit',

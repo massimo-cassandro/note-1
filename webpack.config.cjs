@@ -105,6 +105,12 @@ const config = {
       directory: path.join(__dirname, '/'),
       serveIndex: true,
     },
+    // open: true,
+    open: {
+      app: {
+        name: 'Google Chrome',
+      },
+    },
 
     // open: true,
     compress: true,

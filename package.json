@@ -14,7 +14,7 @@
   "keywords": [],
   "scripts": {
     "php server": "php -S localhost:8000 # -t build/",
-    "webpack DEV": "NODE_ENV=development webpack serve --config ./webpack.config.cjs --open #--open-app-name 'Google Chrome'",
+    "webpack DEV": "open -n -a 'Google Chrome' --args --profile-directory='Profile 3' && NODE_ENV=development webpack serve --config ./webpack.config.cjs",
     "open dev localhost": "open http://localhost:5500/",
     "open dev localhost (chrome)": "open -a 'Google Chrome.app' http://localhost:5500/",
     "UPD-version": "npx update-version # --config=./dev-utilities.config.mjs",
